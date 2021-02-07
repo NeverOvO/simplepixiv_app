@@ -1,9 +1,11 @@
 import 'dart:convert';
 
+import 'package:community_material_icon/community_material_icon.dart';
 import 'package:simplepixiv_app/Index/Controller/HomePageViewController.dart';
 import 'package:flutter/material.dart';
 import 'package:simplepixiv_app/Base/EventBus.dart';
-import 'package:simplepixiv_app/Index/Controller/test.dart';
+import 'package:simplepixiv_app/Index/Controller/KeywordSearchViewController.dart';
+import 'package:simplepixiv_app/Index/Controller/SettingViewController.dart';
 import 'package:responsive_navigation_bar/responsive_navigation_bar.dart';
 
 
@@ -32,6 +34,9 @@ class _bottomBatItemState extends State<bottomBatItem> {
   void onTap(int index) {
     pageController.jumpToPage(index);
     bus.emit('pageController', index);
+    if(index ==0 || index == 1){
+      bus.emit('updateDate');
+    }
   }
 
   void onPageChanged(int index) {
@@ -57,11 +62,8 @@ class _bottomBatItemState extends State<bottomBatItem> {
 
   final pages = [
     HomePageViewController(),
-    StrategicEditPageHedgeViewController(),
-    StrategicEditPageHedgeViewController(),
-    StrategicEditPageHedgeViewController(),
-    StrategicEditPageHedgeViewController(),
-    StrategicEditPageHedgeViewController(),
+    KeywordSearchViewController(),
+    SettingViewController(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -86,19 +88,19 @@ class _bottomBatItemState extends State<bottomBatItem> {
         textStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         navigationBarButtons: <NavigationBarButton>[
           NavigationBarButton(
-            text: '最新',
-            icon: Icons.favorite_rounded,
-            backgroundGradient: const LinearGradient(colors: <Color>[Colors.deepOrange, Colors.orange, Colors.yellow],),
+            text: '随机抽卡!',
+            icon: Icons.star,
+            backgroundGradient: const LinearGradient(colors: <Color>[Colors.blue, Colors.lightBlue, Colors.yellow],),
           ),
           NavigationBarButton(
-            text: '查找',
+            text: '查找色图!',
             icon: Icons.search,
-            backgroundGradient: const LinearGradient(colors: <Color>[Colors.blue,Colors.lightBlueAccent, Colors.yellow],),
+            backgroundGradient: const LinearGradient(colors: <Color>[Colors.red,Colors.redAccent, Colors.yellow],),
           ),
           NavigationBarButton(
-            text: '设置',
+            text: '全局设置',
             icon: Icons.settings,
-            backgroundGradient: const LinearGradient(colors: <Color>[Colors.green, Colors.yellow],),
+            backgroundGradient: const LinearGradient(colors: <Color>[Colors.green,Colors.greenAccent, Colors.yellow],),
           ),
         ],
       ),

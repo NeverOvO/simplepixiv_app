@@ -25,7 +25,7 @@ showMyCustomText(String text,{int seconds = 2}) {
       child: Container(
         decoration: new BoxDecoration(
           //背景
-          color: Color.fromRGBO(255, 255, 255, 1),
+          color: Colors.blue,
           //设置四周圆角 角度
           borderRadius: BorderRadius.all(Radius.circular(15.0)),
         ),
@@ -34,7 +34,7 @@ showMyCustomText(String text,{int seconds = 2}) {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
-              child: Text(text,style: TextStyle(fontSize: 13,color: Colors.grey[800]),),
+              child: Text(text,style: TextStyle(fontSize: 13,color: Colors.white),),
             ),
           ],
         ),
@@ -151,10 +151,10 @@ class __CustomLoadWidgetState extends State<_CustomLoadWidget>
           children: <Widget>[
             FadeTransition(
               opacity: animationController,
-              child: Image(image: AssetImage('images/biex_boss_Login_logo.png'),width: 50,height: 50,),
+              child: Icon(Icons.airplanemode_on_sharp,size: 30,color: Colors.redAccent,),
             ),
             SizedBox(height: 10,),
-            Text(widget.text,),
+            Text(widget.text,style: TextStyle(color: Colors.black),),
           ],
         ),
       ),

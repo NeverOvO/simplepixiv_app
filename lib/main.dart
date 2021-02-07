@@ -78,7 +78,7 @@ class _MyAppState extends State<MyApp>  with WidgetsBindingObserver  {
         canvasColor: Colors.white,//页面背景色
         backgroundColor: Colors.black,
         appBarTheme: AppBarTheme(
-          color: Colors.transparent,
+          color: Colors.blue,
           elevation: 0.0,//隐藏底部阴影分割线
           centerTitle: true,//标题是否居中 安卓上有效ios默认居中
           textTheme: TextTheme(
