@@ -1,6 +1,7 @@
 # 自制P站小助手
 
 个人兴趣自制，如涉及侵权，请联系删除。
+感谢API提供者，URL：https://api.lolicon.app/#/setu?id=前言
 
 ### 支持功能
 
