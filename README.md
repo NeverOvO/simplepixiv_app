@@ -2,17 +2,17 @@
 
 个人兴趣自制，如涉及侵权，请联系删除。
 
-# 支持功能
+### 支持功能
 
 1:首页为随机搜索
 2:按关键字搜索页面
 3:全局设置
 
-# 建议申请APIKEY，申请地址可以私聊联系我，联系方式见个人主页。
+### 建议申请APIKEY，申请地址可以私聊联系我，联系方式见个人主页。
 
 如果感觉还行，送我一个Star哟
 
-# 感谢投喂！
+### 感谢投喂！
 <div align="center">
 	<img src="https://github.com/NeverOvO/NeverOvO/blob/main/IMG_3536(20210207-164320).JPG" alt="Editor" width="150">
   <img src="https://github.com/NeverOvO/NeverOvO/blob/main/IMG_3537(20210207-164334).JPG" alt="Editor" width="150">
@@ -21,7 +21,7 @@
 
 
 
-## Getting Started
+### Getting Started
 
 This project is a starting point for a Flutter application.
 
