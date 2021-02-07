@@ -19,6 +19,9 @@ samples, guidance on mobile development, and a full API reference.
 如果感觉还行，送我一个Star哟
 
 支持投喂！
-![image](https://github.com/NeverOvO/NeverOvO/blob/main/IMG_3536(20210207-164320).JPG)
-![image](https://github.com/NeverOvO/NeverOvO/blob/main/IMG_3537(20210207-164334).JPG)
-![image](https://github.com/NeverOvO/NeverOvO/blob/main/IMG_3538(20210207-164347).JPG)
+<div align="center">
+	<img src="https://github.com/NeverOvO/NeverOvO/blob/main/IMG_3536(20210207-164320).JPG" alt="Editor" width="500">
+  <img src="https://github.com/NeverOvO/NeverOvO/blob/main/IMG_3537(20210207-164334).JPG" alt="Editor" width="500">
+  <img src="https://github.com/NeverOvO/NeverOvO/blob/main/IMG_3538(20210207-164347).JPG" alt="Editor" width="500">
+</div>
+
