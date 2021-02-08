@@ -4,7 +4,6 @@ import 'package:community_material_icon/community_material_icon.dart';
 import 'package:simplepixiv_app/Index/Controller/HomePageViewController.dart';
 import 'package:flutter/material.dart';
 import 'package:simplepixiv_app/Base/EventBus.dart';
-import 'package:simplepixiv_app/Index/Controller/KeywordSearchViewController.dart';
 import 'package:simplepixiv_app/Index/Controller/SettingViewController.dart';
 import 'package:responsive_navigation_bar/responsive_navigation_bar.dart';
 
@@ -62,7 +61,7 @@ class _bottomBatItemState extends State<bottomBatItem> {
 
   final pages = [
     HomePageViewController(),
-    KeywordSearchViewController(),
+    // KeywordSearchViewController(),
     SettingViewController(),
   ];
   @override
@@ -76,33 +75,29 @@ class _bottomBatItemState extends State<bottomBatItem> {
         onPageChanged: onPageChanged,
         physics: NeverScrollableScrollPhysics(), // 禁止滑动
       ),
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: currentIndex,
-        onTabChange: (int index) {
-          currentIndex = index;
-          onTap(index);
-        },
-        outerPadding:const EdgeInsets.fromLTRB(30, 0, 30, 0),
-        fontSize:17,
-        activeButtonFlexFactor : 90,
-        textStyle: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-        navigationBarButtons: <NavigationBarButton>[
-          NavigationBarButton(
-            text: '随机抽卡!',
-            icon: Icons.star,
-            backgroundGradient: const LinearGradient(colors: <Color>[Colors.blue, Colors.lightBlue, Colors.yellow],),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            backgroundColor: Colors.transparent,
+            icon: Icon(Icons.star),
+            activeIcon: Icon(Icons.star),
+            label: "随机抽卡!",//title: Text("消息",style: TextStyle(color: currentIndex == 0 ? Colors.white : Colors.grey),),
           ),
-          NavigationBarButton(
-            text: '查找色图!',
-            icon: Icons.search,
-            backgroundGradient: const LinearGradient(colors: <Color>[Colors.red,Colors.redAccent, Colors.yellow],),
-          ),
-          NavigationBarButton(
-            text: '全局设置',
-            icon: Icons.settings,
-            backgroundGradient: const LinearGradient(colors: <Color>[Colors.green,Colors.greenAccent, Colors.yellow],),
+          BottomNavigationBarItem(
+            backgroundColor: Colors.transparent,
+            icon: Icon(Icons.settings),
+            activeIcon: Icon(Icons.settings),
+            label: "全局设置!",//title: Text("我的",style: TextStyle(color: currentIndex == 4 ? Colors.white : Colors.grey),),
           ),
         ],
+        currentIndex: currentIndex,
+        backgroundColor: Color.fromRGBO(31, 146, 240, 0.8),
+        type: BottomNavigationBarType.fixed,
+        selectedFontSize :12.0,
+        selectedItemColor: Colors.amber,
+        unselectedFontSize : 12.0,
+        unselectedItemColor: Colors.white,
+        onTap: onTap,
       ),
     );
   }

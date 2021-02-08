@@ -78,13 +78,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.15.0-nullsafety.3"
-  common_utils:
-    dependency: "direct main"
-    description:
-      name: common_utils
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "1.2.3"
   community_material_icon:
     dependency: "direct main"
     description:
@@ -113,13 +106,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.0"
-  decimal:
-    dependency: transitive
-    description:
-      name: decimal
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "0.3.5"
   dio:
     dependency: "direct main"
     description:
@@ -127,13 +113,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "3.0.10"
-  dotted_border:
-    dependency: "direct main"
-    description:
-      name: dotted_border
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "1.0.7"
   fake_async:
     dependency: transitive
     description:
@@ -188,13 +167,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.1.1"
-  flutter_easyrefresh:
-    dependency: "direct main"
-    description:
-      name: flutter_easyrefresh
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "2.1.8"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -205,13 +177,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  fluwx:
-    dependency: "direct main"
-    description:
-      name: fluwx
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "2.6.0+1"
   http:
     dependency: transitive
     description:
@@ -275,20 +240,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.8.0-nullsafety.1"
-  path_drawing:
-    dependency: transitive
-    description:
-      name: path_drawing
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "0.4.1+1"
-  path_parsing:
-    dependency: transitive
-    description:
-      name: path_parsing
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "0.1.4"
   path_provider:
     dependency: "direct main"
     description:
@@ -331,6 +282,20 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.9.2"
+  permission_handler:
+    dependency: "direct main"
+    description:
+      name: permission_handler
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "5.1.0+2"
+  permission_handler_platform_interface:
+    dependency: transitive
+    description:
+      name: permission_handler_platform_interface
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.0.2"
   petitparser:
     dependency: transitive
     description:
@@ -359,13 +324,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "3.0.13"
-  rational:
-    dependency: transitive
-    description:
-      name: rational
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "0.3.8"
   responsive_navigation_bar:
     dependency: "direct main"
     description:

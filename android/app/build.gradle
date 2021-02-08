@@ -25,6 +25,11 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
+def keystorePropertiesFile = rootProject.file("key.properties")
+def keystoreProperties = new Properties()
+def projectRoot = project.getRootProject().rootDir.absolutePath
+
+
 android {
     compileSdkVersion 29
 
@@ -45,11 +50,32 @@ android {
         versionName flutterVersionName
     }
 
-    buildTypes {
+    signingConfigs {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig signingConfigs.debug
+            keyAlias "key"
+            keyPassword "lai123456"
+            storeFile file('/Users/laihaibo/key.jks')
+            storePassword "lai123456"
+        }
+    }
+
+    buildTypes {
+//        release {
+//            signingConfig signingConfigs.release
+//        }
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+            //在开发构建环境禁用多个 APK 生成
+            splits.abi.enable = false
+            splits.density.enable = false
+            //禁用PNG缩紧
+            aaptOptions.cruncherEnabled = false
         }
     }
 }

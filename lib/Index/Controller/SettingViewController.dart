@@ -123,6 +123,10 @@ class _SettingViewControllerState extends State<SettingViewController> with Auto
                 padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
               ),
               Container(
+                child:Text('(填写正确APIKEY后建议修改数量为10)',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w300,fontSize: 11),),
+                padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+              ),
+              Container(
                 padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                 child: TextField(
                   decoration: InputDecoration(
@@ -333,7 +337,16 @@ class _SettingViewControllerState extends State<SettingViewController> with Auto
                     });
                   },
                 ),
-              )
+              ),
+              SizedBox(height: 10,),
+              Container(
+                child:Text('免责声明:',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600),),
+                padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
+              ),
+              Container(
+                child:Text('本APP强烈建议在WIFI条件下使用。\n本APP仅用于技术交流,本人不涉及任何商业交易,造成的损失皆与本人无关。\nAPP使用者若喜爱图片请支持P站正版作者。\n请勿随意分享APP,造成的影响本人概不负责。\n',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600),),
+                padding: EdgeInsets.fromLTRB(10, 5, 10, 10),
+              ),
             ],
           ),
 

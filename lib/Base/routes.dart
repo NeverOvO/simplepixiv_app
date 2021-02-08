@@ -2,7 +2,6 @@
 import 'package:simplepixiv_app/Index/Controller/HomePageViewController.dart';
 import 'package:flutter/material.dart';
 import 'package:simplepixiv_app/Base/bottomBarItem.dart';
-import 'package:simplepixiv_app/Index/Controller/KeywordSearchViewController.dart';
 import 'package:simplepixiv_app/Index/Controller/SettingViewController.dart';
 
 
@@ -13,8 +12,6 @@ final routes = {
   '/HomePageViewController': (context, {arguments}) =>HomePageViewController(arguments: arguments),
   //设置
   '/SettingViewController' : (context, {arguments}) =>SettingViewController(arguments: arguments),
-  //关键字搜索
-  '/KeywordSearchViewController' : (context, {arguments}) =>KeywordSearchViewController(arguments: arguments),
 };
 
 // ignore: top_level_function_literal_block, missing_return

@@ -25,8 +25,9 @@ showMyCustomText(String text,{int seconds = 2}) {
       child: Container(
         decoration: new BoxDecoration(
           //背景
-          color: Colors.blue,
-          //设置四周圆角 角度
+          color: Colors.white,
+          //边框圆角设置
+          border: Border.all(width: 1, color: Colors.blue),
           borderRadius: BorderRadius.all(Radius.circular(15.0)),
         ),
         child: Column(
@@ -34,7 +35,7 @@ showMyCustomText(String text,{int seconds = 2}) {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
-              child: Text(text,style: TextStyle(fontSize: 13,color: Colors.white),),
+              child: Text(text,style: TextStyle(fontSize: 13,color: Colors.black),),
             ),
           ],
         ),

@@ -32,16 +32,13 @@ dependencies:
   bot_toast: ^3.0.5 #提示框等等
   awesome_dialog: ^1.3.1 #弹出框
   shared_preferences: ^0.5.12+4 #数据存储 本地化存储
-  common_utils: ^1.2.1 #工具类 https://pub.flutter-io.cn/packages/common_utils
-  flutter_easyrefresh: ^2.1.8 #下拉刷新
-  fluwx: ^2.5.0+1 #微信分享
-  dotted_border: ^1.0.7 #虚线框
   cached_network_image: ^2.5.0 #网络图片加载
   #后续
   responsive_navigation_bar: ^1.8.0 #底部栏
   community_material_icon: ^5.8.55 #更多icon
   image_gallery_saver: ^1.6.7
   path_provider: ^1.6.27 #清理缓存
+  permission_handler: ^5.0.1+1
 
 dev_dependencies:
   flutter_test:
