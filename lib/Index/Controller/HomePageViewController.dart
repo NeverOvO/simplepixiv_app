@@ -78,7 +78,7 @@ class _HomePageViewControllerState extends State<HomePageViewController> with Au
     showMyCustomLoading('正在加载,请等待');
     var response= await Dio().get(_nowUrl);
     if(response.statusCode == 200){
-      print(response.data);
+      // print(response.data);
       if(!mounted){
         return;
       }
